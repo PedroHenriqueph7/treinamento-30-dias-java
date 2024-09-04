@@ -20,8 +20,10 @@ public class DivisaoComExcecao {
         
     }
 
-    public static double divisao(int num1, int num2){
+    public static double divisao(int num1, int num2) throws Exception {
+        if(num2 == 0)
+          throw new Exception();
+          
         return num1 / num2;
-
     }
 }
