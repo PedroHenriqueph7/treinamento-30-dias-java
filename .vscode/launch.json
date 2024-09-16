@@ -1,0 +1,126 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "semana3.programa1.Main",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "semana3.Main",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Array",
+            "request": "launch",
+            "mainClass": "semana1.Array",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "Matriz",
+            "request": "launch",
+            "mainClass": "semana1.Matriz",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "MatrizTransposta",
+            "request": "launch",
+            "mainClass": "semana1.MatrizTransposta",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "Vetor",
+            "request": "launch",
+            "mainClass": "semana1.Vetor",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "Vetor2",
+            "request": "launch",
+            "mainClass": "semana1.Vetor2",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "ConversorTemperatura",
+            "request": "launch",
+            "mainClass": "semana2.ConversorTemperatura",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "DivisaoComExcecao",
+            "request": "launch",
+            "mainClass": "semana2.DivisaoComExcecao",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "Fatorial",
+            "request": "launch",
+            "mainClass": "semana2.Fatorial",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "JogoAdivinha",
+            "request": "launch",
+            "mainClass": "semana2.JogoAdivinha",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "ListOrdenada",
+            "request": "launch",
+            "mainClass": "semana2.ListOrdenada",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "semana2.Main",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "NumerosPrimos",
+            "request": "launch",
+            "mainClass": "semana2.NumerosPrimos",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "SomaMatriz",
+            "request": "launch",
+            "mainClass": "semana2.SomaMatriz",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "PalavraPalindromo",
+            "request": "launch",
+            "mainClass": "semana3.PalavraPalindromo",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        }
+    ]
+}

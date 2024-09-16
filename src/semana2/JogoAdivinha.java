@@ -14,13 +14,15 @@ public class JogoAdivinha {
            numeroInformadoPeloUsuario = scanner.nextInt();
             
            if (numeroAleatorio > numeroInformadoPeloUsuario)
-              System.out.println("O número aleatório é Maior!");
+              System.out.println("O número aleatório gerado pelo robo é Maior!");
            else if (numeroAleatorio < numeroInformadoPeloUsuario)
-              System.out.println("O número aleatório é Menor!");
+              System.out.println("O número aleatório gerado pelo robo é Menor!");
 
         } while (numeroAleatorio != numeroInformadoPeloUsuario);
 
-        System.out.println("PARABÉNS VOÇÊ INFORMOU O NÚMERO CORRETO!!!");
+        System.out.println("---------------------------------------------------");
+        System.out.println("PARABÉNS VOCÊ INFORMOU O NÚMERO CORRETO!!!");
+        System.out.println("---------------------------------------------------");
         scanner.close();
     }
 
