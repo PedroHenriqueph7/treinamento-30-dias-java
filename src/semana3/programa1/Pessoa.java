@@ -4,6 +4,7 @@ public class Pessoa {
     final static private String PAIS = "Brasil";
     private String nome;
     private int idade;
+    private Endereco endereco;
 
     
     public Pessoa(String nome, int idade) {
@@ -21,8 +22,12 @@ public class Pessoa {
     
     public static String getPais() { return PAIS; }
 
+    public Endereco getEndereco() { return endereco; }
+
+    public void setEndereco(Endereco endereco) {   this.endereco = endereco; }
+
     public void mostrarDados(){
-        System.out.println("Dados da Pessoas\n"+ nome +"\n"+ idade +"anos\nPais: "+ PAIS);
+        System.out.println("Dados da Pessoas\n"+ nome +"\n"+ idade +"anos\nPais: "+ PAIS+"\nEndereço: "+endereco);
     }
 
     public void cumprimentar(String nome){

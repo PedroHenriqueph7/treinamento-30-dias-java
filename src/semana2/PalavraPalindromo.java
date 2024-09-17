@@ -1,4 +1,4 @@
-package semana3;
+package semana2;
 
 import java.util.Scanner;
 // Voltar para resolver o problema da palavra palindromo
