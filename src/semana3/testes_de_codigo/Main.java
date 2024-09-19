@@ -1,4 +1,4 @@
-package semana3.programa1;
+package semana3.testes_de_codigo;
 
 import java.util.Scanner;
 
@@ -22,20 +22,37 @@ public class Main {
         pessoa.imprimirSaudação();
         pessoa2.cumprimentar();
         pessoa.mostrarDados();
+        System.out.println();
 
         // Retornando um array de pessoas 
         final int NUMERO_MAXIMO_PESSOAS = 5;
         Pessoa[] arrayPessoas = new Pessoa[NUMERO_MAXIMO_PESSOAS];
         Endereco[] arrayEnderecos = new Endereco[NUMERO_MAXIMO_PESSOAS];
-        System.out.println("Informe seus Nomes e Idades: ");
-        for(int i = 0; i < arrayPessoas.length; i++){
-            arrayEnderecos[i] = new Endereco(sc.nextLine(), sc.nextLine(), sc.nextInt());
-            arrayPessoas[i] = new Pessoa(sc.next(), sc.nextInt(), arrayEnderecos[i]);
-        }
+
        
+        for(int i = 0; i < arrayPessoas.length; i++){
+
+            System.out.println("Informe seu nome e a sua idade: ");
+            String nome = sc.nextLine();
+            int idade = sc.nextInt();
+            sc.nextLine();
+            System.out.println("Informe seu endereço: Rua/cidade/cep ");
+            arrayEnderecos[i] = new Endereco(sc.nextLine(), sc.nextLine(), sc.nextInt());
+            
+            arrayPessoas[i] = new Pessoa(nome, idade, arrayEnderecos[i]);
+            sc.nextLine();
+        }
+        
+        System.out.println();
         for (Pessoa p : arrayPessoas) {
                 p.mostrarDados();
         }
+        
+        // Atribuicao do Professor no Codigo
+        Endereco endereco3 = new Endereco("Rua Vieira Lima", "Brasilia", 2875);
+        Pessoa professor = new Professor("Raimundo", 40, endereco3, "Matematica");
+    
+        professor.mostrarDados();
         
         sc.close();
     } 

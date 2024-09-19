@@ -1,4 +1,4 @@
-package semana3.programa1;
+package semana3.testes_de_codigo;
 
 public class Endereco {
       private String rua;
@@ -27,7 +27,7 @@ public class Endereco {
 
     @Override
     public String toString() {
-        return "rua=" + rua + ", cidade=" + cidade + ", cep=" + cep;
+        return "Rua: " + rua + ", Cidade: " + cidade + ", Cep: " + cep;
     }
 
     
