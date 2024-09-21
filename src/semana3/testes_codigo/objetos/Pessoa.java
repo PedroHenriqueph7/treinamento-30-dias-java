@@ -1,6 +1,8 @@
-package semana3.testes_de_codigo;
+package semana3.testes_codigo.objetos;
 
-public class Pessoa {
+import semana3.testes_codigo.funcionalidades.Imprimivel;
+
+public class Pessoa implements Imprimivel{
     protected final static String PAIS = "Brasil";
     private String nome;
     private int idade;
@@ -47,4 +49,11 @@ public class Pessoa {
     public static void imprimirSaudação(){
        System.out.println("Bem-vindo ao nosso Lar");
        }
+
+    @Override
+    public void imprimir() {
+       System.out.println("Imprimindo");
+    }
+
+    
 }

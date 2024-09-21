@@ -1,6 +1,6 @@
-package semana3.testes_de_codigo;
+package semana3.testes_codigo.objetos;
 
-import static semana3.testes_de_codigo.Pessoa.PAIS;
+import static semana3.testes_codigo.objetos.Pessoa.PAIS;
 
 public class Professor extends Pessoa{
     private String disciplina;

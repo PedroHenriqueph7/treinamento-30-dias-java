@@ -1,4 +1,4 @@
-package semana3.testes_de_codigo;
+package semana3.testes_codigo.objetos;
 
 public class Aluno extends Pessoa{
 

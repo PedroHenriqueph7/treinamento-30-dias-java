@@ -1,6 +1,11 @@
-package semana3.testes_de_codigo;
+package semana3.testes_codigo.aplicacao;
 
 import java.util.Scanner;
+
+import semana3.testes_codigo.objetos.Aluno;
+import semana3.testes_codigo.objetos.Endereco;
+import semana3.testes_codigo.objetos.Pessoa;
+import semana3.testes_codigo.objetos.Professor;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +27,7 @@ public class Main {
         pessoa.imprimirSaudação();
         pessoa2.cumprimentar();
         pessoa.mostrarDados();
+        pessoa.imprimir();
         System.out.println();
 
         // Retornando um array de pessoas 
