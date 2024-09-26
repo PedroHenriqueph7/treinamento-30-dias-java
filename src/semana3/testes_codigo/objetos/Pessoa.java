@@ -38,16 +38,12 @@ public class Pessoa implements Imprimivel{
         System.out.println("Dados da Pessoais\nNome: "+ nome +", Idade: "+ idade +" anos, Pais: "+ PAIS+"\nEndereço: "+endereco);
     }
 
-    public void cumprimentar(String nome){
-        String nome1 = nome;
-    }
-
     public void cumprimentar(){
         System.out.println("Olá");
     }
 
     public static void imprimirSaudação(){
-       System.out.println("Bem-vindo ao nosso Lar");
+       System.out.println("Bem-vindo ao nosso Sistema");
        }
 
     @Override

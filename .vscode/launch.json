@@ -8,6 +8,27 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "semana3.testes_codigo6.aplicacao.Main",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "semana3.testes_codigo6.Main",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "semana3.testes_codigo5.Main",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "semana3.testes_codigo3.Main",
             "projectName": "treinamento-30-dias-java_e26c2727"
         },

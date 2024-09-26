@@ -1,4 +1,4 @@
-package semana3.testes_codigo3;
+package semana3.testes_codigo3.objetos;
 
 public enum diadeSemana {
     DOMINGO(1),

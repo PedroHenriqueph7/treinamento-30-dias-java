@@ -2,7 +2,7 @@ package semana3.testes_codigo4;
 
 import javax.swing.JOptionPane;
 
-public class Popaps {
+public class Popups {
     public static void main(String[] args) {
 
     // escrita 

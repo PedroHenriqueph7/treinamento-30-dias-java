@@ -1,5 +1,8 @@
 package semana3.testes_codigo.aplicacao;
 
+
+import static semana3.testes_codigo.objetos.Pessoa.imprimirSaudação;
+
 import java.util.Scanner;
 
 import semana3.testes_codigo.objetos.Aluno;
@@ -17,19 +20,19 @@ public class Main {
 
         // instancia de um aluno e sua matricula 
         Endereco endereco2 = new Endereco("Rua florence", "Santa Catarina", 38283);
-        Aluno aluno = new Aluno("Pedro", 19, endereco, 234);
-        
+        Aluno aluno = new Aluno("Pedro", 19, endereco2, 234);
+       
+    
         // teste do construtor vazio
         Pessoa pessoa2 = new Pessoa();
         
         // testando os metodos 
         aluno.mostrarDados();
-        pessoa.imprimirSaudação();
         pessoa2.cumprimentar();
         pessoa.mostrarDados();
         pessoa.imprimir();
         System.out.println();
-
+        imprimirSaudação();
         // Retornando um array de pessoas 
         final int NUMERO_MAXIMO_PESSOAS = 5;
         Pessoa[] arrayPessoas = new Pessoa[NUMERO_MAXIMO_PESSOAS];
