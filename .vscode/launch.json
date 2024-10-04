@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Pilha",
+            "request": "launch",
+            "mainClass": "semana4.Pilha",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "CaixaEletronico",
+            "request": "launch",
+            "mainClass": "semana4.atividade_livro.aplicacao.CaixaEletronico",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
+            "name": "IdadeExcecoes",
+            "request": "launch",
+            "mainClass": "semana3.testes_codigo7.IdadeExcecoes",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "semana3.testes_codigo6.aplicacao.Main",
