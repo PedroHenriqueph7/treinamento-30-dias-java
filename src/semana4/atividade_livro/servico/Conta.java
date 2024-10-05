@@ -5,7 +5,7 @@ import semana3.testes_codigo.objetos.Pessoa;
 public class Conta {
     private Double saldo;
     private int numeroConta;
-    private Pessoa pessoa;
+    private Object pessoa;
     private int tipoConta;
     
     public Conta() {
@@ -29,11 +29,11 @@ public class Conta {
     }
 
     public Pessoa getPessoa() {
-        return pessoa;
+        return (Pessoa) pessoa;
     }
 
-    public void setPessoa(Pessoa pessoa) {
-        this.pessoa = pessoa;
+    public void setPessoa(semana4.atividade_livro.entidades.Pessoa pessoa2) {
+        this.pessoa = pessoa2;
     }
 
     public int getTipoConta() {
@@ -44,6 +44,18 @@ public class Conta {
         this.tipoConta = tipoConta;
     }
 
+    @Override
+    public String toString() {
+        return "Informações da Conta: \nsaldo: " + saldo + ", numeroConta: " + numeroConta + ", Titular: " + pessoa + ", tipoConta: "
+                + tipoConta;
+    }
+
+    
+
+    
+
+
+    
     
     
     

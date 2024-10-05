@@ -22,5 +22,11 @@ public class Pessoa {
     public String getTelefone() {
         return telefone;
     }
+
+    @Override
+    public String toString() {
+        return nomePessoa;
+    }
  
+    
 }
