@@ -4,12 +4,14 @@ import semana3.testes_codigo.objetos.Pessoa;
 
 
 public class Conta{
+    // atributos
     private Double saldo;
     private int    agencia;
     private String numeroConta;
     private Object titular;
     private String tipoConta;
     
+    // construtores
     public Conta() {
         
     }
@@ -21,7 +23,7 @@ public class Conta{
         this.tipoConta = tipoConta;
     }
 
-
+    // metodos acessores
     public Double getSaldo() {
         return saldo;
     }
@@ -50,8 +52,8 @@ public class Conta{
         return (Pessoa) titular;
     }
 
-    public void setPessoa(semana4.atividade_livro.entidades.Pessoa pessoa2) {
-        this.titular = pessoa2;
+    public void setPessoa(Pessoa titular) {
+        this.titular = titular;
     }
 
     public String getTipoConta() {
@@ -62,28 +64,34 @@ public class Conta{
         this.tipoConta = tipoConta;
     }
 
+    // funcionalidades da conta 
     public void sacar(double valorSaque) throws Exception{
-        if (saldo >= valorSaque)
+        if (saldo >= valorSaque){
            this.saldo -= valorSaque;
-        else
-           throw new Exception("Saldo Insuficiente");
+           System.out.println("Saque efetuado com sucesso no valor de "+ valorSaque);
+    }else
+           throw new Exception("Saldo Insuficiente!!");
     }
 
     public void depositar(double valorDeposito){
           this.saldo += valorDeposito;
+          System.out.println("Deposito realizado com sucesso no valor de "+ valorDeposito);
     }
 
     public void verificarSaldo(){
          System.out.println("Saldo da Conta: "+ getSaldo());
     }
 
-    public void transferir(int agencia, String numeroContaDestino, double valor) throws Exception{
-          if (getAgencia() == agencia && getNumeroConta().equals(numeroContaDestino))
-              this.saldo += valor;
-          else
+    public void transferir(Conta contadeDestino, int agencia, String numeroContaDestino, double valordaTrasferencia) throws Exception{
+        
+          if (contadeDestino.getAgencia() == agencia && contadeDestino.getNumeroConta().equals(numeroContaDestino)){
+              contadeDestino.saldo += valordaTrasferencia;
+              this.saldo -= valordaTrasferencia;
+          }else
              throw new Exception("Conta não encontrada! Verifique se os dados estão corretos");
     }
 
+    // retorno do objeto conta
     @Override
     public String toString() {
         return "Informações da Conta: \nsaldo: " + saldo + ", numeroConta: " + numeroConta + ", Titular: " + titular + ", tipoConta: "
