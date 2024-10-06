@@ -10,82 +10,39 @@ import semana4.atividade_livro.servico.Conta;
 
 
 
-public class CaixaEletronico {
-    private Conta conta;
-    private ArrayList<Conta> arraysConta = new ArrayList<>();
-    public static void main(String[] args) {
-        /* 
-        Endereco endereco = new Endereco("Rua Olivia Miranda", 45, "São Paulo", "SP");
-        Endereco endereco2 = new Endereco("Rua São Sebastião", 36, "São Paulo", "SP");
-        Endereco endereco3 = new Endereco("Rua Interlagos", 68, "São Paulo", "SP");
-
-        
-          Pessoa pessoa = new Pessoa("Pedro", endereco, "11 996203382");
-          Conta conta = new Conta();
-          conta.setPessoa(pessoa);
-          conta.setSaldo(20.00);
-          conta.setNumeroConta(27384);
-          conta.setTipoConta(2);
-
-          
-          Pessoa pf = new PessoaFisica("Luiz", endereco2, "11 948332940", "93849920204");
-          Conta conta2 = new Conta();
-          conta2.setPessoa(pf);
-          conta2.setSaldo(300.00);
-          conta2.setNumeroConta(3293);
-          conta2.setTipoConta(1);
-
-          PessoaJuridica pj = new PessoaJuridica("João", endereco3, "11 958372837", "19294020324");
-          Conta conta3 = new Conta();
-          conta3.setPessoa(pj);
-          conta3.setSaldo(299.00);
-          conta3.setNumeroConta(302);
-          conta3.setTipoConta(3);
-
-          System.out.println(conta);
-          System.out.println(conta2);
-          System.out.println(conta3);
-          */
-
-          
-    }
-  
-    public Conta getConta() {
-        return conta;
-    }
-
-
-    public void setConta(Conta conta) {
-        this.conta = conta;
-    }
-
-
-    public ArrayList<Conta> getArraysConta() {
-        return arraysConta;
-    }
-
-
-    public void setArraysConta(ArrayList<Conta> arraysConta) {
-        this.arraysConta = arraysConta;
-    }
-
-
-    public void sacar(double valorSaque){
-       
-    }
-
-    public void depositar(double valorDeposito){
-        
-    }
-
-    public double verificarSaldo(){
-         return conta.getSaldo();
-    }
-
-    public void transferir(Conta numeroContaDestino, double valor){
-
-    }
+public class CaixaEletronico{
+    
+    ArrayList<Conta> arraysConta = new ArrayList<>();
  
-
-
+    public static void main(String[] args) {
+        
+        try {
+            Endereco endereco = new Endereco("Rua Ficticia xxxx", 45, "Cidade xxx", "SP");
+            Endereco endereco2 = new Endereco("Rua Ficticia yyyy", 36, "Cidade yyy", "SP");
+            Endereco endereco3 = new Endereco("Rua Ficticia llll", 68, "Cidade aaa", "SP");
+    
+            
+              Pessoa pessoa = new Pessoa("Pedro", endereco, "11 981111111");
+              Conta conta = new Conta(1111, "2222-2", pessoa, "poupança");
+              conta.setSaldo(900.00);
+              
+              
+              Pessoa pf = new PessoaFisica("Luiz", endereco2, "11 972222222", "113.333.333-00");
+              Conta conta2 = new Conta(2222, "3333-3", pf, "poupança");
+              conta2.setSaldo(1300.00);
+              
+    
+              PessoaJuridica pj = new PessoaJuridica("João", endereco3, "11 955555554", "11-3333/0000-00");
+              Conta conta3 = new Conta(3333, "4444-4", pj, "corrente");
+              conta3.setSaldo(2099.00);
+              
+             
+              System.out.println(conta);
+              System.out.println(conta2);
+              System.out.println(conta3);
+               
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+        }     
+    }
 }
