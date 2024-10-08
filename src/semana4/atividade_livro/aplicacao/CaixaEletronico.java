@@ -24,8 +24,8 @@ public class CaixaEletronico{
             
               Pessoa pessoa = new Pessoa("Pedro", endereco, "11 981111111");
               Conta conta = new Conta(1111, "2222-2", pessoa, "poupança");
-              conta.setSaldo(900.00);
-              conta.sacar(100.00);
+              conta.setSaldo(1900.00);
+              conta.sacar(1000.00);
               conta.depositar(1000.00);
               System.out.println(conta);
 
@@ -39,9 +39,9 @@ public class CaixaEletronico{
               System.out.println();
               PessoaJuridica pj = new PessoaJuridica("João", endereco3, "11 955555554", "11-3333/0000-00");
               Conta conta3 = new Conta(3333, "4444-4", pj, "corrente");
-              conta3.setSaldo(2409.00);
+              conta3.setSaldo(4409.00);
               System.out.println(conta3);
-              conta3.transferir(conta, 1111, "2222-2", 1740.00);
+              conta3.transferir(conta, 1111, "2222-2", 3000.00);
               
               System.out.println();
               System.out.println("Após a transferência");

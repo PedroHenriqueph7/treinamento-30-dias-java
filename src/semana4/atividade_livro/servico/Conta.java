@@ -10,6 +10,9 @@ public class Conta{
     private String numeroConta;
     private Object titular;
     private String tipoConta;
+    final private static double LIMITE_DE_TRANSFERENCIA = 3000.00;
+    final private static double LIMITE_DO_SAQUE = 1000.00;
+    private double taxaJuros;
     
     // construtores
     public Conta() {
@@ -66,10 +69,12 @@ public class Conta{
 
     // funcionalidades da conta 
     public void sacar(double valorSaque) throws Exception{
-        if (saldo >= valorSaque){
+        if (valorSaque > LIMITE_DO_SAQUE)
+            throw new Exception("Valor do saque acima do limite permitido");
+        else if (saldo >= valorSaque){
            this.saldo -= valorSaque;
            System.out.println("Saque efetuado com sucesso no valor de "+ valorSaque);
-    }else
+        }else
            throw new Exception("Saldo Insuficiente!!");
     }
 
@@ -84,7 +89,11 @@ public class Conta{
 
     public void transferir(Conta contadeDestino, int agencia, String numeroContaDestino, double valordaTrasferencia) throws Exception{
         
-          if (contadeDestino.getAgencia() == agencia && contadeDestino.getNumeroConta().equals(numeroContaDestino)){
+          if (valordaTrasferencia > LIMITE_DE_TRANSFERENCIA)
+              throw new Exception("Valor da transferência acima do limite");
+          else if (valordaTrasferencia > getSaldo())
+              throw new Exception("Saldo insuficente para transferência");
+          else if (contadeDestino.getAgencia() == agencia && contadeDestino.getNumeroConta().equals(numeroContaDestino)){
               contadeDestino.saldo += valordaTrasferencia;
               this.saldo -= valordaTrasferencia;
           }else
