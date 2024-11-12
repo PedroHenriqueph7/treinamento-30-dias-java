@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "semana4.codigos_nao_completos.Main",
+            "projectName": "treinamento-30-dias-java_e26c2727"
+        },
+        {
+            "type": "java",
             "name": "Pilha",
             "request": "launch",
             "mainClass": "semana4.Pilha",
