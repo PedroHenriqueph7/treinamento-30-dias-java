@@ -1,10 +1,8 @@
 package semana3.tests_cod2.aplicacao;
 
 import java.util.Scanner;
+import semana3.tests_cod2.objetos.*;
 
-import semana3.tests_cod2.objetos.Funcionario;
-import semana3.tests_cod2.objetos.Gerente;
-import semana3.tests_cod2.objetos.Operador;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

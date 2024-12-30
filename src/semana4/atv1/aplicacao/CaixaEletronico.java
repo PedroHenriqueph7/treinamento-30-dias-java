@@ -2,10 +2,8 @@ package semana4.atv1.aplicacao;
 
 import java.util.ArrayList;
 
-import semana4.atv1.entidades.Endereco;
-import semana4.atv1.entidades.Pessoa;
-import semana4.atv1.entidades.PessoaFisica;
-import semana4.atv1.entidades.PessoaJuridica;
+import semana4.atv1.entidades.*;
+
 import semana4.atv1.servico.Conta;
 
 

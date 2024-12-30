@@ -5,9 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import semana4.atv1.Girafa;
-import semana4.atv2.animais.CachorrodoMato;
-import semana4.atv2.animais.Cavalo;
-import semana4.atv2.animais.Preguica;
+import semana4.atv2.animais.*;
 
 public class Zoologico {
     public static void main(String[] args) {

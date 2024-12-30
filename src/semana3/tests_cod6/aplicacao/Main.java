@@ -1,10 +1,7 @@
 package semana3.tests_cod6.aplicacao;
 
 import java.util.Locale;
-
-import semana3.tests_cod6.entidades.Conta;
-import semana3.tests_cod6.entidades.ContaCorrente;
-import semana3.tests_cod6.entidades.ContaPoupanca;
+import semana3.tests_cod6.entidades.*;
 
 public class Main {
     public static void main(String[] args) {
